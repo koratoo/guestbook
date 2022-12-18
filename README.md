@@ -1,5 +1,5 @@
 # 방명록 만들어 보기
-스프링부트, JPA , THYMELEAF
+스프링부트, JPA , Thymeleaf
 
 
 ## 1.목록화면 작업 (
