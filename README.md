@@ -2,7 +2,7 @@
 스프링부트, JPA , Thymeleaf
 
 
-## 1.목록화면 작업 (
+## 1.목록화면 작업 
 ### ● 프론트 영역
 ![목록화면](https://user-images.githubusercontent.com/96603612/208294539-7bb0ac1c-15bf-4ec2-b305-afdcec75ea7a.png)
 <br><br>
