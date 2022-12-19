@@ -9,8 +9,9 @@
 #### ● 목록화면 디자인
 ![목록화면 설명없는](https://user-images.githubusercontent.com/96603612/208295019-77a5b9a3-8e39-45f0-9deb-b308ff240537.png)
 #### 아키텍쳐 흐름
-![흐름](https://user-images.githubusercontent.com/96603612/208407066-13d3660a-7209-4eac-a9e9-87ce59d67d7b.png)
-
+![흐름](https://user-images.githubusercontent.com/96603612/208407066-13d3660a-7209-4eac-a9e9-87ce59d67d7b.png)<br>
+화면단 : DTO로 변환 필요<br>
+DB단 : 엔티티로 변환 필요
 #### ● 등록화면(서비스 로직)
 ![등록](https://user-images.githubusercontent.com/96603612/208405915-a0bcc05c-030e-47ce-9bfa-c34b86de2292.png)<br>
 등록한 DTO를 엔티티로 변환하여 저장합니다. 
