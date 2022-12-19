@@ -14,7 +14,7 @@
 DB단 : 엔티티로 변환 필요<br>
 서비스 로직 : 
 <br>
-
+{
 package org.zerock.guestbook.service;
 
 import org.zerock.guestbook.dto.GuestbookDTO;
@@ -52,6 +52,7 @@ public interface GuestbookService {
 
         return dto;
     }
+}
 }
 #### ● 등록화면(서비스 로직)
 ![등록](https://user-images.githubusercontent.com/96603612/208405915-a0bcc05c-030e-47ce-9bfa-c34b86de2292.png)<br>
