@@ -14,46 +14,46 @@
 DB단 : 엔티티로 변환 필요<br>
 서비스 로직 : 
 <br>
-{
-package org.zerock.guestbook.service;
 
-import org.zerock.guestbook.dto.GuestbookDTO;
-import org.zerock.guestbook.dto.PageRequestDTO;
-import org.zerock.guestbook.dto.PageResultDTO;
-import org.zerock.guestbook.entity.Guestbook;
+    package org.zerock.guestbook.service;
 
-public interface GuestbookService {
+    import org.zerock.guestbook.dto.GuestbookDTO;
+    import org.zerock.guestbook.dto.PageRequestDTO;
+    import org.zerock.guestbook.dto.PageResultDTO;
+    import org.zerock.guestbook.entity.Guestbook;
 
-    Long register(GuestbookDTO dto);
+    public interface GuestbookService {
 
-    PageResultDTO<GuestbookDTO, Guestbook> getList(PageRequestDTO requestDTO);
+        Long register(GuestbookDTO dto);
 
-    default Guestbook dtoToEntity(GuestbookDTO dto){
-        Guestbook entity = Guestbook.builder()
-                .gno(dto.getGno())
-                .title(dto.getTitle())
-                .content(dto.getContent())
-                .writer(dto.getWriter())
-                .build();
+        PageResultDTO<GuestbookDTO, Guestbook> getList(PageRequestDTO requestDTO);
 
-        return entity;
+        default Guestbook dtoToEntity(GuestbookDTO dto){
+            Guestbook entity = Guestbook.builder()
+                    .gno(dto.getGno())
+                    .title(dto.getTitle())
+                    .content(dto.getContent())
+                    .writer(dto.getWriter())
+                    .build();
+
+            return entity;
+        }
+
+        default GuestbookDTO entityToDto(Guestbook entity){
+
+            GuestbookDTO dto = GuestbookDTO.builder()
+                    .gno(entity.getGno())
+                    .title(entity.getTitle())
+                    .content(entity.getContent())
+                    .writer(entity.getWriter())
+                    .regDate(entity.getRegDate())
+                    .modDate(entity.getModDate())
+                    .build();
+
+            return dto;
+        }
     }
 
-    default GuestbookDTO entityToDto(Guestbook entity){
-
-        GuestbookDTO dto = GuestbookDTO.builder()
-                .gno(entity.getGno())
-                .title(entity.getTitle())
-                .content(entity.getContent())
-                .writer(entity.getWriter())
-                .regDate(entity.getRegDate())
-                .modDate(entity.getModDate())
-                .build();
-
-        return dto;
-    }
-}
-}
 #### ● 등록화면(서비스 로직)
 ![등록](https://user-images.githubusercontent.com/96603612/208405915-a0bcc05c-030e-47ce-9bfa-c34b86de2292.png)<br>
 등록한 DTO를 엔티티로 변환하여 저장합니다. 
