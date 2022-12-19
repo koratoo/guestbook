@@ -12,4 +12,7 @@
 ![등록](https://user-images.githubusercontent.com/96603612/208405915-a0bcc05c-030e-47ce-9bfa-c34b86de2292.png)<br>
 등록한 DTO를 엔티티로 변환하여 저장합니다. 
 #### ● 읽기화면
+![읽기](https://user-images.githubusercontent.com/96603612/208406384-5312c973-34fe-4869-b9fa-e31308de76d0.png)<br>
+등록된 엔티티를 DTO로 변환한  컨트롤러에서 뷰로 전달합니다.
+
 
